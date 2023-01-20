@@ -8,6 +8,7 @@ const Home = () => {
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias beatae labore
                 amet quos rerum possimus non facere obcaecati fugit?
+                <i class='ri-shopping-bag-line'></i>
             </p>
         </>
     );
