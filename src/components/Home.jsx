@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
-import { MyContext } from './Contex';
+import { MyContext } from './Context';
 
 const Home = () => {
     return (

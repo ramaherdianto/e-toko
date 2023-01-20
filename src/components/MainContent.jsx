@@ -1,5 +1,5 @@
 import React from 'react';
-import { Provider } from './Contex';
+import { Provider } from './Context';
 import Home from './Home';
 
 const MainContent = () => {
