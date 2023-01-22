@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <nav className='bg-white shadow-md'>
+            <nav className='bg-light shadow-md fixed top-0 w-full z-10'>
                 <div className='max-w-7xl mx-auto'>
                     <div className='flex items-center h-16 px-4 sm:px-4 md:px-4 lg:px-4 xl:px-0 2xl:px-0'>
                         <div className='flex items-center w-full justify-between gap-16'>
@@ -36,7 +36,7 @@ const Navbar = () => {
                                         href='#'
                                         className='relative after:absolute after:top-2 after:right-0 after:w-[6px] after:h-[6px] after:bg-primary after:rounded-[50%]'
                                     >
-                                        <i class='ri-shopping-bag-line text-lg'></i>
+                                        <i className='ri-shopping-bag-line text-lg'></i>
                                     </a>
 
                                     <a
@@ -77,7 +77,7 @@ const Navbar = () => {
                                 href='#'
                                 className='relative text-lg after:absolute after:top-[7px] after:right-0 after:w-[6px] after:h-[6px] after:bg-primary after:rounded-[50%]'
                             >
-                                <i class='ri-shopping-bag-line'></i>
+                                <i className='ri-shopping-bag-line'></i>
                             </a>
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
