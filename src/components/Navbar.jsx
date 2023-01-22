@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
             <nav className='bg-white shadow-md'>
                 <div className='max-w-7xl mx-auto'>
-                    <div className='flex items-center h-16 px-4'>
+                    <div className='flex items-center h-16 px-4 sm:px-4 md:px-4 lg:px-4 xl:px-0 2xl:px-0'>
                         <div className='flex items-center w-full justify-between gap-16'>
                             <div className='flex-shrink-0'>
                                 <img
@@ -16,37 +16,45 @@ const Navbar = () => {
                                     alt='Workflow'
                                 />
                             </div>
-                            <div className='hidden md:flex'>
-                                <div className='flex items-center justify-end pl-[4rem] space-x-4'>
+                            <div className='hidden sm:hidden md:hidden lg:block xl:block 2xl:block'>
+                                <div className='flex items-center justify-end md:pl-[4rem] lg:pl-[4rem] xl:pl-[4rem] 2xl:pl-[4rem] space-x-3'>
                                     <a
                                         href='#'
-                                        className='relative text-primary px-3 py-2 rounded-md text-sm font-medium after:absolute after:left-[13px] after:bottom-1 after:w-[30px] after:h-[2px] after:bg-primary'
+                                        className='relative text-primary px-3 py-2 rounded-md text-sm font-medium after:absolute after:left-[13px] after:bottom-1 after:w-[50%] after:h-[2px] after:bg-primary'
                                     >
                                         Home
                                     </a>
 
                                     <a
                                         href='#'
-                                        className='relative transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2px] hover:after:w-[30px] hover:after:h-[2px] after:bg-primary hover:text-white px-3 py-2 rounded-md text-sm font-normal'
+                                        className='relative transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2px] hover:after:w-[50%] hover:after:h-[2px] after:bg-primary hover:text-white px-3 py-2 rounded-md text-sm font-normal'
+                                    >
+                                        About
+                                    </a>
+
+                                    <a
+                                        href='#'
+                                        className='relative after:absolute after:top-2 after:right-0 after:w-[6px] after:h-[6px] after:bg-primary after:rounded-[50%]'
+                                    >
+                                        <i class='ri-shopping-bag-line text-lg'></i>
+                                    </a>
+
+                                    <a
+                                        href='#'
+                                        className='relative transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2px] hover:after:w-[50%] hover:after:h-[2px] after:bg-primary hover:text-white px-3 py-2 rounded-md text-sm font-normal'
                                     >
                                         Category
                                     </a>
 
                                     <a
                                         href='#'
-                                        className='relative transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2px] hover:after:w-[30px] hover:after:h-[2px] after:bg-primary hover:text-white px-3 py-2 rounded-md text-sm font-normal'
+                                        className='relative transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2px] hover:after:w-[50%] hover:after:h-[2px] after:bg-primary hover:text-white px-3 py-2 rounded-md text-sm font-normal'
                                     >
                                         Product
                                     </a>
-                                    <a
-                                        href='#'
-                                        className='relative after:absolute after:top-2 after:right-0 after:w-[6px] after:h-[6px] after:bg-primary after:rounded-[50%]'
-                                    >
-                                        <i class='ri-shopping-bag-line'></i>
-                                    </a>
                                 </div>
                             </div>
-                            <div className='hidden md:block'>
+                            <div className='hidden sm:hidden md:hidden lg:block xl:block 2xl:block'>
                                 <div className='flex gap-3'>
                                     <a
                                         href='#'
@@ -64,7 +72,7 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex items-center gap-3 md:hidden'>
+                        <div className='flex items-center gap-3 lg:hidden xl:hidden 2xl:hidden'>
                             <a
                                 href='#'
                                 className='relative text-lg after:absolute after:top-[7px] after:right-0 after:w-[6px] after:h-[6px] after:bg-primary after:rounded-[50%]'
@@ -126,13 +134,23 @@ const Navbar = () => {
                     leaveFrom='opacity-100 scale-100'
                     leaveTo='opacity-0 scale-95'
                 >
-                    <div className='md:hidden shadow-sm' id='mobile-menu'>
+                    <div
+                        className='block sm:block lg:hidden xl:hidden 2xl:hidden shadow-sm'
+                        id='mobile-menu'
+                    >
                         <div className='flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3'>
                             <a
                                 href='#'
                                 className=' transition-all duration-300 ease-in-out text-dark relative px-3 py-2 rounded-md text-sm font-medium hover:bg-secondary hover:text-light'
                             >
                                 Home
+                            </a>
+
+                            <a
+                                href='#'
+                                className=' transition-all duration-300 ease-in-out text-dark relative px-3 py-2 rounded-md text-sm font-medium hover:bg-secondary hover:text-light'
+                            >
+                                About
                             </a>
 
                             <a
@@ -149,18 +167,18 @@ const Navbar = () => {
                                 Product
                             </a>
                         </div>
-                        <div className='md:hidden block '>
+                        <div className='block sm:block md:block lg:hidden'>
                             <div className='flex flex-col px-2 pt-2 pb-3 space-y-4 sm:px-3'>
                                 <a
                                     href='#'
-                                    className='bg-light text-primary border border-primary transition-all duration-300 ease-in-out hover:border-secondary hover:bg-secondary hover:text-light flex items-center pt-2 pb-[12px] px-[18px] rounded-md '
+                                    className='bg-light text-primary border border-primary transition-all duration-300 ease-in-out hover:border-secondary hover:bg-secondary hover:text-light flex justify-center items-center pt-2 pb-[12px] px-[18px] rounded-md '
                                 >
                                     Sign Up
                                 </a>
 
                                 <a
                                     href='#'
-                                    className='bg-primary border border-primary hover:border-secondary transition-all duration-300 ease-in-out hover:bg-secondary hover:text-light flex items-center pt-2 pb-[12px] px-[18px] rounded-md text-light'
+                                    className='bg-primary border border-primary hover:border-secondary transition-all duration-300 ease-in-out hover:bg-secondary hover:text-light flex justify-center items-center pt-2 pb-[12px] px-[18px] rounded-md text-light'
                                 >
                                     Login
                                 </a>
