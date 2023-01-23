@@ -2,7 +2,7 @@ import React from 'react';
 
 const SearchProducts = () => {
     return (
-        <section className='py-10 mb-[20rem] flex flex-col justify-center items-center gap-8'>
+        <section className='py-10 flex flex-col justify-center items-center gap-8'>
             <h1 className='text-3xl font-semibold'>All Products</h1>
             <div className='flex flex-wrap justify-center gap-3'>
                 <input
