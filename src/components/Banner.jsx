@@ -33,7 +33,7 @@ const Banner = () => {
             >
                 {banners.map((banner) => {
                     return (
-                        <SwiperSlide className='flex items-center justify-center'>
+                        <SwiperSlide key={banner.id} className='flex items-center justify-center'>
                             <img src={banner.image} className='w-full' alt='' />
                         </SwiperSlide>
                     );
